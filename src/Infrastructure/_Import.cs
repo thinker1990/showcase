@@ -1,0 +1,10 @@
+﻿global using Abstractions.Exceptions;
+global using Infrastructure.Exceptions;
+global using Microsoft.Maui.Graphics;
+global using OpenCvSharp;
+global using static Abstractions.PixelFormat;
+global using static Abstractions.Utility;
+global using static OpenCvSharp.MatType;
+global using Bound = Microsoft.Maui.Graphics.RectF;
+global using Point = Microsoft.Maui.Graphics.PointF;
+global using Size = Microsoft.Maui.Graphics.SizeF;

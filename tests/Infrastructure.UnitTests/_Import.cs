@@ -1,0 +1,15 @@
+﻿global using Abstractions;
+global using Abstractions.Authorization;
+global using Abstractions.Exceptions;
+global using Abstractions.VisionServices;
+global using FluentAssertions;
+global using Infrastructure.Activation;
+global using Infrastructure.Authorization;
+global using Infrastructure.Exceptions;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.Maui.Graphics;
+global using NUnit.Framework;
+global using OpenCvSharp;
+global using static Infrastructure.UnitTests.Category;
+global using static Infrastructure.UnitTests.Common;
+global using static Infrastructure.UnitTests.TestFixture;
