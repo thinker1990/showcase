@@ -3,12 +3,22 @@ using System.Text;
 
 namespace Infrastructure.Authorization;
 
+/// <summary>
+/// Provides methods for hashing passwords.
+/// </summary>
 public static class PasswordHasher
 {
     private const int KeySize = 64;
     private const int Iterations = 100000;
     private static readonly HashAlgorithmName HashAlgorithm = HashAlgorithmName.SHA512;
 
+    /// <summary>
+    /// Hashes the specified password using the specified salt.
+    /// </summary>
+    /// <param name="password">The password to hash.</param>
+    /// <param name="salt">The salt to use for hashing.</param>
+    /// <returns>The hashed password as a base64 string.</returns>
+    /// <exception cref="ArgumentException">Thrown when the password or salt is null or empty.</exception>
     public static string Hash(string password, string salt)
     {
         EnsureNotEmpty(password, nameof(password));
